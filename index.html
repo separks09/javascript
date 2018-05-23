@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UFO Sightings Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" 
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!--DataTables-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <script src = "https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>  
+    <!--Custom CSS-->
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="jumbotron banner">
+        <div class="container">
+            <hgroup>
+                
+                    <h1 class="text-white text-center">Search UFO Sightings</h1>
+                    <h3 class="text-white text-center"
+                        >Use the dynamic table below to search our database of more than 23,000 UFO sightings
+                    </h3>
+            </hgroup>
+        </div>
+    </div>
+
+    <hr>
+
+<div class = "container">
+    <form class="form-inline justify-content-center">
+        <div class="form-group mr-5">
+            <input type="text" class="form-control" id="input" placeholder="Look for">
+        </div>
+        <div class="form-group dropdown mr-5">
+            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">in Column
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href ="#" id="action-1">Date</a></li>
+                <li><a href ="#" id="action-2">City</a></li>
+                <li><a href ="#" id="action-3">State</a></li>
+                <li><a href ="#" id="action-4">Country</a></li>
+                <li><a href ="#" id="action-5">Shape</a></li>
+                <li><a href ="#" id="action-6">Clear Selection</a></li>
+            </ul>
+        </div>
+        <div class="form-group mr-5">
+            <div class="panel">
+                <div class = "panel-body"></div>
+            </div>
+        </div>
+        <a id="search" class="btn btn-default btn-primary mr-5">Search</a>
+    </form>
+</div>
+
+    <div class="container m-5 mt-0">
+        <h2>Filtered UFO Sightings</h2>
+        <table class="table table-striped" id = "ufoTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Country</th>
+                    <th>Shape</th>
+                    <th>Duration</th>
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="data.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
+
+</body>

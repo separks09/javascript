@@ -1,0 +1,8 @@
+.jumbotron {
+    background-image: url('space.jpg');
+    background-color: #17234E;
+    margin-bottom: 0;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
